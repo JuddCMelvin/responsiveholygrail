@@ -1,6 +1,7 @@
 * {
     border: 1px solid teal;
-}                  
+}   
+
 :root {
     --pale-sage: #BFF4CB;
     --sage: #84A98C;
@@ -12,6 +13,7 @@
 h1 {
     color: red; 
 }
+
 body {
     margin: 0;
     font-family: sans-serif;
@@ -19,40 +21,40 @@ body {
     background-color: var(--night-forest);
     color: var(--pale-sage);
 } 
-@media (min-width: 600px) {
-    .container {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    main {
-      max-width: 60%;
-    }
-    header, footer {
-      width: 100%;
-    }
-  }                                  
-                
 
 .container {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
-}                  
+}   
+
+@media (min-width: 600px) {
+    .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    main {
+    max-width: 60%;
+    }
+    header, footer {
+    width: 100%;
+    }
+}  
+
 main {
     min-height: 60vh;
     flex-grow: 5;
-  }
-  
-  aside, nav {
+}
+
+aside, nav {
     background-color: var(--dusty-emerald);
     flex-grow: 2;
-  }
-  
-  footer, header {
+}
+
+footer, header {
     background-color: var(--sage);
     flex-grow: 1;
-  }                                              
-          
+}                                              
 
 
